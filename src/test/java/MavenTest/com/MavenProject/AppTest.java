@@ -64,6 +64,9 @@ public class AppTest
     	}
     	
     }
+    @Test
+    public void verifyCommit()
+    {System.out.println("Test first commit.");}
     @AfterTest
     public void quitBrowser()
     

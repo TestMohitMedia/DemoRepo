@@ -1,0 +1,14 @@
+package com.rediffmoney.test;
+
+import org.testng.annotations.Test;
+
+public class SelectDropDown extends BaseTest
+{
+   @Test
+   public void selectDropDown()
+   {
+	   browserSetUP();
+	   driver.navigate().to("https://www.toolsqa.com/automation-practice-form"); 
+	   
+   }
+}

@@ -1,0 +1,34 @@
+package com.rediffmoney.test;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class SelectDropDown extends BaseTest
+{
+   @Test
+   public void selectDropDown()
+   {
+	   browserSetUP();
+	   driver.navigate().to("https://www.toolsqa.com/automation-practice-form");
+	   WebElement continents=driver.findElement(By.id("continents"));
+	   JavascriptExecutor js=(JavascriptExecutor)driver;
+	   js.executeScript("arguments[0].scrollIntoView(true);",continents);
+	   Select option=new Select(continents);
+	   System.out.println("Select Default Option: "+option.getFirstSelectedOption().getText());
+	   option.selectByVisibleText("South America");
+	   List<WebElement> ls=option.getAllSelectedOptions();
+	   System.out.println("Size od continents list: "+ls.size());
+	   System.out.println("***********List Data*****************");
+	   for(WebElement elemt:ls)
+	   {
+		   System.out.println(elemt.getText());
+	   }
+	   
+	   
+   }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.rediffmoney&apos; to &apos;RediffMoney&apos;" description="Rename resource &apos;com.rediffmoney&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.rediffmoney" name="RediffMoney" stamp="1544872342734" updateReferences="true"/>
+</session>
