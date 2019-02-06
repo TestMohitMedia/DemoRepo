@@ -67,7 +67,7 @@
         <version>2.12</version>
           <configuration>
            <suiteXmlFiles>
-               <suiteXmlFile>/com.MavenProject/pom.xml</suiteXmlFile>
+               <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
                  </configuration> 
     </plugin>
